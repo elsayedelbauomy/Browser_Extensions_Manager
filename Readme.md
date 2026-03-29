@@ -33,7 +33,7 @@
 
 1.  **Clone & Open:**
     ```bash
-    git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+    git clone [https://github.com/elsayedelbauomy/Browser_Extensions_Manager.git](https://github.com/elsayedelbauomy/Browser_Extensions_Manager.git)
     ```
 2.  **Run:**
     Open with **Live Server** to enable the JSON data fetching.
