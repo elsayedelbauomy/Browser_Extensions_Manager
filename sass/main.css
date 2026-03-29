@@ -1,0 +1,138 @@
+:root {
+  --dark: hwb(226 4% 76%);
+  --cardColor: hsl(226, 25%, 17%);
+  --NeutralIcon: hsl(225, 23%, 24%);
+  --borderColor: hsl(226, 11%, 37%);
+  --toggleColor: hsl(226, 11%, 37%);
+  --Neutral300: hsl(0, 0%, 78%);
+  --Neutral200: hsl(217, 61%, 90%);
+  --Neutral100: hsl(0, 0%, 93%);
+  --maintext: hsl(200, 60%, 99%);
+  --Red400: hsl(3, 86%, 64%);
+  --Red: hsl(3, 71%, 56%);
+  --Red700: hsl(3, 77%, 44%);
+  --Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+[data-theme=light] {
+  --Gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  --cardColor: hsl(200, 60%, 99%);
+  --maintext:hwb(226 4% 76%);
+  --Red:hsl(3, 77%, 44%);
+  --NeutralIcon:hsl(0, 0%, 93%);
+  --toggleColor: hsl(0, 0%, 78%);
+  --Neutral300:hsl(225, 23%, 24%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--Gradient);
+}
+main header {
+  background: var(--cardColor);
+}
+main header .logo {
+  width: 179px;
+  height: 41px;
+}
+main header .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+main header #changColor {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  background: var(--NeutralIcon);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+main header #changColor:hover {
+  border: 2px solid var(--Red);
+}
+main h2 {
+  color: var(--maintext);
+  font-weight: bold;
+}
+main ul {
+  color: var(--maintext);
+}
+main ul li {
+  background: var(--cardColor);
+  padding: 10px 20px;
+  border: 1px solid var(--borderColor);
+  cursor: pointer;
+  transition: 0.3s;
+}
+main ul li:hover {
+  border: 1px solid var(--Red);
+}
+main ul li.active {
+  background: var(--Red);
+  color: var(--dark);
+  font-weight: 500;
+  border: inherit;
+}
+
+main {
+  padding-bottom: 40px;
+}
+main section .box {
+  border: 1px solid var(--borderColor);
+  height: 210px;
+}
+main section .box img {
+  margin-top: -15px;
+}
+main section .box h5 {
+  color: var(--maintext);
+}
+main section .box span {
+  color: var(--Neutral300);
+  font-size: 0.9rem;
+}
+main section .box .remove {
+  border: 1px solid var(--borderColor);
+  color: var(--maintext);
+  background-color: transparent;
+  font-weight: 0.8rem;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+main section .box .remove:hover {
+  border: 1px solid var(--Red);
+}
+main section .box .toggleBtn {
+  background-color: var(--toggleColor);
+  width: 50px;
+  height: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main section .box .toggleBtn.active {
+  background-color: var(--Red);
+}
+main section .box .toggleBtn.active span {
+  left: 27.5px !important;
+}
+main section .box .toggleBtn span {
+  background: white;
+  transition: 0.3s;
+  width: 20px;
+  height: 20px;
+  margin-top: 2.5px;
+  left: 2.5px;
+}/*# sourceMappingURL=main.css.map */

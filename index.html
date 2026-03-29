@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <!-- bootstrap file -->
+  <link rel="stylesheet" href="./sass/bootstrap.min.css">
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body data-theme="dark">
+  <main>
+    <div class="container pt-5">
+      <header class="d-flex align-items-center justify-content-between p-2 ps-3 pe-3  rounded-4">
+        <div class="logo"><img src="./assets/images/Gemini_Generated_Image_b503owb503owb503-removebg-preview.png" alt="logo"></div>
+        <button id="changColor" class="rounded-4">
+          <img src="./assets/images/icon-sun.svg" alt="light mood">
+        </button>
+      </header>
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mt-5">
+        <h2>Extensions List</h2>
+        <ul  class="list-unstyled d-flex filterList  align-items-center  gap-4">
+          <li class="rounded-pill active" data-status="all">All</li>
+          <li class="rounded-pill" data-status="active">Active</li>
+          <li class="rounded-pill" data-status="inactive">Inactive</li>
+        </ul>
+      </div>
+      <section>
+        <div class="row mt-5 g-4" id="row">
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- bootstrap script -->
+  <script src="./dist/bootstrap.bundle.min.js"></script>
+  <!-- main script file -->
+  <script  src="./dist/main.js"></script>
+</body>
+</html>
